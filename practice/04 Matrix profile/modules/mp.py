@@ -25,6 +25,7 @@ def compute_mp(ts1: np.ndarray, m: int, exclusion_zone: int = None, ts2: np.ndar
     
     # INSERT YOUR CODE
 
+    mp = stumpy.stump(ts1, m, ts2)
     return {'mp': mp[:, 0],
             'mpi': mp[:, 1],
             'm' : m,
